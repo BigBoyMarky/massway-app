@@ -10,7 +10,7 @@ import { MOCKINVENTORY } from './mock-inventory';
 	addItem(InventoryItem) {
 		
 	}
-	getItem(itemNumber: number): Promise<InventoryItem> {
+	/*getItem(itemNumber: number): Promise<InventoryItem> {
 		return this.getItems().then(inventory => inventory.find(inventoryItem => inventoryItem.itemNumber === itemNumber));
-	}
+	}*/
 }

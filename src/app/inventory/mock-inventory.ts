@@ -2,11 +2,11 @@ import { InventoryItem } from './inventory-item';
 
 export const MOCKINVENTORY: InventoryItem[] = [
 	  {
-	    itemNumber: 1,
+	    itemNumber: "1-1",
 	    itemOrigin: "Columbus",
-	    itemEntryDate: "10/19/2017",
+	    itemEntryDate: new Date("10/19/2017"),
 	    itemQuantityImported: 100,
-	    itemUnit: "DZ",
+	    itemUnit: 1,
 	    itemDescription: "Mark's Products",
 	    itemUnitCost: 50,
 	    itemTotalCost: 5000,
@@ -15,11 +15,11 @@ export const MOCKINVENTORY: InventoryItem[] = [
 	    itemZeta: 1
 	  },
 	  {
-	    itemNumber: 2,
+	    itemNumber: "1-2",
 	    itemOrigin: "California",
-	    itemEntryDate: "10/20/2017",
+	    itemEntryDate: new Date("10/20/2017"),
 	    itemQuantityImported: 200,
-	    itemUnit: "DZ",
+	    itemUnit: 1,
 	    itemDescription: "Caro's Products",
 	    itemUnitCost: 100,
 	    itemTotalCost: 20000,
@@ -28,11 +28,11 @@ export const MOCKINVENTORY: InventoryItem[] = [
 	    itemZeta: 2
 	  },
 	  {
-	    itemNumber: 3,
+	    itemNumber: "1-3",
 	    itemOrigin: "Chile",
-	    itemEntryDate: "10/21/2017",
+	    itemEntryDate: new Date("10/21/2017"),
 	    itemQuantityImported: 1000,
-	    itemUnit: "DZ",
+	    itemUnit: 1,
 	    itemDescription: "Chile Product",
 	    itemUnitCost: 500,
 	    itemTotalCost: 500000,
