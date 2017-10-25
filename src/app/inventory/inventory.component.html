@@ -1,0 +1,56 @@
+<div class="container-fluid">
+	<h2>{{ title }}</h2>
+	<button (click)="modal.show()">Add Item</button>
+  	<add-inventory-modal #modal>
+
+    <div class="app-modal-header">
+    	Add Item
+    </div>
+    <div class="app-modal-body">
+    	<form #addItemForm="ngForm" (ngSubmit)="addItem(addItemForm)">
+	    	<div class="form-group">
+		    	<label for="addItemNumber">Item Number</label>
+		    	<input type="text" class="form-control" id="addItemNumber" name="addItemNumber" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemOrigin">Origin</label>
+		    	<input type="text" class="form-control" id="addItemOrigin" name="addItemOrigin" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemEntryDate">Entry Date</label>
+		    	<input type="date" class="form-control" id="addItemEntryDate" name="addItemEntryDate" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemQuantityImported">Quantity Imported</label>
+		    	<input type="number" class="form-control" id="addItemQuantityImported" name="addItemQuantityImported" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemUnit">Unit</label>
+		    	<!--<input type="number" class="form-control" id="name" required>-->
+		    	<select name="addItemUnit" ngModel required>
+		    		<option value="Single">Single</option>
+		    		<option value="DZ">DZ</option>
+		    	</select>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemDescription">Description</label>
+		    	<input type="text" class="form-control" id="addItemDescription" name="addItemDescription" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemUnitCost">Unit Cost</label>
+		    	<input type="number" class="form-control" id="addItemUnitCost" name="addItemUnitCost" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemTotalCost">Total Cost</label>
+		    	<input type="number" class="form-control" id="addItemTotalCost" name="addItemTotalCost" ngModel required>
+		    </div>
+			<button type="button" class="btn btn-default" (click)="modal.hide()">Close</button>
+			<button type="submit" class="btn btn-primary">Add Item</button>
+		</form>
+    </div>
+    <div class="app-modal-footer">
+    </div>
+  </add-inventory-modal>
+</div>
+<br />
+<ngx-datatable class="material" [rows]="rows" [columns]="columns"></ngx-datatable>
