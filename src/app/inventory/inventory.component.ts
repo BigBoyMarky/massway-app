@@ -45,9 +45,9 @@ export class InventoryComponent implements OnInit {
 			"itemDescription": form.value.addItemDescription,
 			"itemUnitCost": form.value.addItemUnitCost,
 			"itemTotalCost": form.value.addItemTotalCost,
-			"itemNotes": "test",
-			"itemPrice": 0,
-			"itemZeta": 0
+			"itemNotes": form.vaule.addItemNotes,
+			"itemPrice": form.value.addItemPrice,
+			"itemZeta": form.value.addItemZeta
 		});
 		//MOCKINVENTORY.push(new InventoryItem(form.addItemNumber, form.addItemOrigin, form.addItemEntryDate, form.addItemQuantityImported, form.addItemUnit, form.addItemDescription, form.addItemUnitCost, form.addItemTotalCost));
 		// get the items from the form and add to array

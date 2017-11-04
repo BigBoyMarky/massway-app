@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
 	<h2>{{ title }}</h2>
 	<button (click)="modal.show()">Add Item</button>
   	<add-inventory-modal #modal>
@@ -6,6 +6,11 @@
     <div class="app-modal-header">
     	Add Item
     </div>
+
+
+
+
+    
     <div class="app-modal-body">
     	<form #addItemForm="ngForm" (ngSubmit)="addItem(addItemForm)">
 	    	<div class="form-group">
@@ -43,6 +48,18 @@
 	    	<div class="form-group">
 		    	<label for="addItemTotalCost">Total Cost</label>
 		    	<input type="number" class="form-control" id="addItemTotalCost" name="addItemTotalCost" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemNotes">Notes</label>
+		    	<input type="text" class="form-control" id="addItemNotes" name="addItemNotes" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemPrice">Price</label>
+		    	<input type="number" class="form-control" id="addItemPrice" name="addItemPrice" ngModel required>
+		    </div>
+	    	<div class="form-group">
+		    	<label for="addItemZeta">Zeta</label>
+		    	<input type="number" class="form-control" id="addItemZeta" name="addItemZeta" ngModel required>
 		    </div>
 			<button type="button" class="btn btn-default" (click)="modal.hide()">Close</button>
 			<button type="submit" class="btn btn-primary">Add Item</button>
