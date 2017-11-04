@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'add-inventory-modal',
-  templateUrl: 'add-inventory-modal.component.html'
+  selector: 'add-item-to-inventory',
+  templateUrl: 'add-item-to-inventory.component.html'
 })
-export class AddInventoryModalComponent {
+export class AddItemToInventoryComponent {
 
   public visible = false;
   public visibleAnimate = false;

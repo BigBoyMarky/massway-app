@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { InventoryItem } from './inventory-item';
 import { InventoryService } from './inventory.service';
 
-import { AddInventoryModalComponent } from './add-inventory-modal.component';
+import { AddItemToInventoryComponent } from './add-item-to-inventory.component';
 import { MOCKINVENTORY } from './mock-inventory';
 
 @Component({
@@ -52,5 +52,8 @@ export class InventoryComponent implements OnInit {
 		//MOCKINVENTORY.push(new InventoryItem(form.addItemNumber, form.addItemOrigin, form.addItemEntryDate, form.addItemQuantityImported, form.addItemUnit, form.addItemDescription, form.addItemUnitCost, form.addItemTotalCost));
 		// get the items from the form and add to array
 	}
-}
 
+	addItemRedirect() {
+		//this.router.navigate(['./addItem'])
+	}
+}
